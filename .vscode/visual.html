@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREGUNTAS Y RESPUESTAS </title>
+<style> 
+main {
+  background-color: white;
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  background-color: white;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Pregunta */
+#pregunta {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Botones de opciones */
+button {
+  width: 100%;
+  background-color: white;
+  color: #333;
+  border: 2px solid #ddd;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover (cuando pasas el mouse) */
+button:hover {
+  background-color: #39963f;
+  border-color: #bbb;
+}
+
+/* Botón siguiente */
+#op4 {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-top: 15px;
+}
+
+#op4:hover {
+  background-color: #45a049;
+}
+
+/* Resultado */
+#resultado {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #222;
+}
+
+
+</style>
+</head>
+<body>
+    <main>
+
+          <H1>JUEGO</H1>
+    <h2 id = "pregunta"></h2>
+    
+ <button onclick="responder(0) "id="op0"></button>
+ <button onclick="responder(1) "id="op1"></button>
+ <button onclick="responder(2) "id="op2"></button>
+ <button onclick="responder(3) "id="op3"></button>
+
+ <p id ="resultado"></p>
+
+<button onclick="siguiente(4) "id="op4"></button>
+ 
+ </main>    
+  
+
+
+ <script src="logi.js"></script>
+
+ 
+    
+ </body>
+ </html>
