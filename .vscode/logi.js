@@ -7,8 +7,7 @@ let pregunta =[
 let opciones =[ 
 ["Bogota", "Cali","Popayan","barranquilla"],
 ["3","4","5","7"],
-["15","20","10","5"]
-]
+["15","20","10","5"]]
 
 
 let correcta = [0,1,0];
@@ -30,7 +29,7 @@ document.getElementById("op3").innerHTML = opciones [numeroPregunta] [3];
 
  }
 
-function responder(opcion){
+function responder(opcion){ //esto es dar una funcion 
     if (opcion==correcta[numeroPregunta]){
 
 document.getElementById("resultado").innerHTML =  '<img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/well-done-emoji-design-template-0a5d9a9e35252a85776b7c54055a05b4_screen.jpg?ts=1650348078" style="width:200px; border-radius:12px;">';
